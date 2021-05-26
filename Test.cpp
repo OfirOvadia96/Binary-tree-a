@@ -39,6 +39,10 @@ TEST_CASE("test 3"){
     CHECK_NOTHROW(tree.add_right(6,88));
     CHECK_NOTHROW(tree.add_right(4,11));
     CHECK_NOTHROW(tree.add_left(4,33));
-    CHECK_NOTHROW(tree.add_root(200)); //replacing the value of the root
+    
+    //replace root
+    for(int i=0; i<50; i++){
+    CHECK_NOTHROW(tree.add_root(i));
+    }
 }
 
